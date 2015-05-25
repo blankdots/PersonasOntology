@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta name="publisher" content="blankdots.com">
+<meta name="author" content="Stefan Negru">
+<meta name="keywords" content="Personas, schema, microdata">
+<meta name="description" content="Personas and Usability Testing Schema">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" type="text/css" href="schemastyle.css">
+<link href="prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="prettify.js"></script>
+<script type="text/javascript">
+      $(document).ready(function(){
+        prettyPrint();
+        setTimeout(function(){
+
+  $(".atn:contains(itemscope), .atn:contains(itemtype), .atn:contains(itemprop), .atn:contains(itemid), .atn:contains(time), .atn:contains(datetime), .atn:contains(datetime), .tag:contains(time) ").addClass('new');
+  $('.new + .pun + .atv').addClass('curl');
+
+        }, 500);
+      });
+</script>
+<title>Personas and Usability Testing Schema - Documentation</title>
+</head>
+
+<body>
+  <header class="mainHeader">
+    <h1>Proposed Personas and Usability Testing extensions to schema.org</h1>
+    <nav>
+      <h1 class="hidden">Main Navigation</h1>
+      <ul>
+        <li id="isSelected"><a href="index.html">Documentation</a></li>
+        <li><a href="schema.html">Schema</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="mainSection">
+  <h1>Introduction to Personas and UsabilityTest schema extensions</h1>
+
+<p><strong>Schema authors:</strong> <a href="http://profs.info.uaic.ro/~stefan.negru/">Stefan Negru</a> and <a href="http://thor.info.uaic.ro/~busaco/">Sabin C. Buraga</a> (Faculty of Computer Science, A. I. Cuza University of Iasi, Romania).</p>
+<p><strong>Last updated:</strong> 8 January 2013</p>
+
+<!-- <p><strong>Motivation:</strong></p>
+<p></p> -->
+
+<p><strong>Modeling approach:</strong></p>
+<p class="hidden">Our proposed schema extensions model includes a core set of entities such as:</p>
+<ul>
+  <li><a href="http://schema.org/Thing">Thing</a>
+    <ul>
+      <li><a href="schema.html#persona">Persona</a></li>
+      <li><a href="schema.html#scenario">Scenario</a></li>
+      <li><a href="schema.html#context">Context</a></li>
+      <li><a href="schema.html#disability">Disability</a></li>
+      <li><a href="schema.html#UsabilityTest">ProductTesting</a> 
+        <ul>
+          <li><a href="schema.html#UsabilityTest">UsabilityTest</a></li>
+        </ul>
+      </li>
+      <li><a href="schema.html#task">Workflow</a> 
+        <ul>
+          <li><a href="schema.html#task">Task</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Our proposed extensions to schema.org are best used with the following templates:</p>
+<ul>
+  <li><a href="http://blankdots.com/open/personas/">Personas Document Template</a></li>
+  <li><a href="http://blankdots.com/open/usability/">Usability Test Plan Template</a></li>
+</ul> 
+
+<p><strong>Extending the Schema:</strong></p>
+<ul>
+  <li><strong>Disability</strong> type could be part of <a href="http://www.w3.org/wiki/WebSchemas/MedicalHealthProposal">MedicalHealth</a> schema proposal.</li>
+  <li><strong>ProductTesting</strong> is a general item type that encompasses both Software and Hardware testing concepts and properties (e.g. Quality Assurance, Unit Testing, Debug Report etc.).</li>
+  <li><strong>ProductTesting</strong> type could be included in <a href="http://schema.org/SoftwareApplication">SoftwareApplication Schema</a> and/or <a href="http://schema.org/Product">schema.org/Product</a>.</li>
+  <li><strong>Workflow</strong> item type can be extended to encompass classes and properties from the <a href="http://www.intelleo.eu/ontologies/workflow/spec/">IntelLEO Workflow Ontology</a> like: <a href="http://www.intelleo.eu/ontologies/workflow/spec/#term_Project">Project</a>, <a href="http://www.intelleo.eu/ontologies/workflow/spec/#term_Meeting">Meeting</a> and others</li>
+</ul>
+<p><strong>Articles Published:</strong></p>
+<ul>
+ <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+      <strong itemprop="name">"Towards a Conceptual Model for Describing the Personas Methodology"</strong>
+      <span style="color:#999;"> (in <span itemprop="inLanguage">English</span>) - ICCP 2012 Conference Proceedings, 
+      <span itemprop="publisher">IEEE Computer Society Press</span> 
+      <span itemprop="copyrightYear">2012</span> </span>   
+        <span class="hidden" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="givenName">Stefan</span> <span itemprop="familyName">Negru</span> and </span> 
+        <span class="hidden" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="givenName">Sabin</span> <span itemprop="familyName">Buraga</span> </span>
+    </li>
+    <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+      <strong itemprop="name">"Persona Modeling Process: from Microdata-Based Templates to Specific Web Ontologies"</strong>
+      <span style="color:#999;"> (in <span itemprop="inLanguage">English</span>), KEOD 2012 Conference Proceedings, part of IC3K conference, 
+        <span itemprop="publisher">SciTePress</span> 
+        <span itemprop="copyrightYear">2012</span> </span> 
+        <span class="hidden" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="givenName">Stefan</span> <span itemprop="familyName">Negru</span> and </span> 
+        <span class="hidden" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="givenName">Sabin</span> <span itemprop="familyName">Buraga</span> </span>
+    </li>
+    <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+      <strong itemprop="name">"Personas Method in the Context of Semantic Web"</strong>
+      <span style="color:#999;"> (in <span itemprop="inLanguage">Romanian</span>), RoCHI 2012 Conference Proceedings,
+        <span itemprop="publisher">MatrixRom</span> 
+        <span itemprop="copyrightYear">2012</span> </span> 
+        <span class="hidden" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="givenName">Stefan</span> <span itemprop="familyName">Negru</span> and </span> 
+        <span class="hidden" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="givenName">Sabin</span> <span itemprop="familyName">Buraga</span> </span>
+    </li>
+</ul>
+<p><strong>Examples:</strong></p>
+<p>Micodata schema applied to Personas and Usability Test Plan Templates:</p>
+ <ul> 
+  <li><a href="http://dl.dropbox.com/u/37811/personas_microdata.zip">Personas Document Template</a> zip archive</li>
+  <li><a href="http://dl.dropbox.com/u/37811/usabilitytest_microdata.zip">Usability Test Plan Template</a> zip archive</li>
+</ul>
+<p>To make sense how the proposed schema might be used, see the examples below:</p>
+<strong>Simple HTML:</strong>
+<pre class="prettyprint lang-html linenums">
+&lt;article&gt;
+    &lt;div&gt;
+      &lt;h3&gt;Type: &lt;strong&gt;Primary&lt;/strong&gt;&lt;/h3&gt;
+      &lt;figure&gt;
+        &lt;img src="teacher.jpg" alt="persona image" /&gt;
+      &lt;/figure&gt;
+      &lt;div&gt;       
+        &lt;h4&gt;Name: &lt;span&gt;John&lt;/span&gt; &lt;span&gt;Doe&lt;/span&gt;&lt;/h4&gt;
+          &lt;h5&gt;Background&lt;/h5&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;strong&gt;Date of Birth:&lt;/strong&gt; 
+                &lt;time datetime="1980-10-23"&gt;10/23/1980&lt;/time&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Gender:&lt;/strong&gt; &lt;span&gt;Male&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;
+                &lt;strong&gt;Location:&lt;/strong&gt; &lt;span&gt;Iasi, Romania&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Work place:&lt;/strong&gt; 
+                &lt;span &gt;FII UAIC&lt;/span&gt;, &lt;span &gt;Teacher&lt;/span&gt;&lt;/li&gt;
+            &lt;li &gt;
+                &lt;strong&gt;School:&lt;/strong&gt;  &lt;span&gt;FII UAIC&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Technology Level:&lt;/strong&gt;&lt;span&gt;Advanced&lt;/span&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;div&gt;
+        &lt;div&gt;
+          &lt;h5&gt;Main Points&lt;/h5&gt;
+          &lt;p&gt;John is a teacher at computer scicence at UAIC and has advanced computer skills. 
+          For example:&lt;/p&gt;
+          &lt;ul&gt;
+            &lt;li&gt;John has developed such applications and has programming knowledge&lt;/li&gt;
+            &lt;li&gt;John dislikes applications that are not well structured;&lt;/li&gt;
+            &lt;li&gt;Working environment: Desktop - Mac OS, Mobile: Iphone OS;&lt;/li&gt;           
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;h5&gt;Goals&lt;/h5&gt;
+          &lt;p&gt;Goals are the reasons users perform tasks, not the tasks.&lt;/p&gt;
+          &lt;ul&gt;
+            &lt;li&gt;Practical Goals: &lt;span&gt;share courses&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;Personal Goals: &lt;span&gt;organize work information and tasks&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;Business Goals: &lt;span&gt;increase student enrollment&lt;/span&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+</pre>
+  <br><br>
+  <strong>With Microdata:</strong>
+  <pre  class="prettyprint lang-html linenums">
+&lt;article itemscope itemtype="http://schema.org/Persona"&gt;
+    &lt;div&gt;
+      &lt;h3&gt;Type: &lt;strong itemprop="personaType"&gt;Primary&lt;/strong&gt;&lt;/h3&gt;
+      &lt;figure&gt;
+        &lt;img  itemprop="image" src="teacher.jpg" alt="persona image" /&gt;
+      &lt;/figure&gt;
+      &lt;div&gt;       
+        &lt;h4&gt;Name: &lt;span itemprop="givenName"&gt;John&lt;/span&gt; &lt;span itemprop="familyName"&gt;Doe&lt;/span&gt;&lt;/h4&gt;
+          &lt;h5&gt;Background&lt;/h5&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;strong&gt;Date of Birth:&lt;/strong&gt; 
+                &lt;time itemprop="birthDate" datetime="1980-10-23"&gt;10/23/1980&lt;/time&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Gender:&lt;/strong&gt; &lt;span itemprop="gender"&gt;Male&lt;/span&gt;&lt;/li&gt;
+            &lt;li itemprop="location" itemscope itemtype="http://schema.org/Place"&gt;
+                &lt;strong&gt;Location:&lt;/strong&gt; &lt;span itemprop="name"&gt;Iasi, Romania&lt;/span&gt;&lt;/li&gt;
+            &lt;li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"&gt;&lt;strong&gt;Work place:&lt;/strong&gt; 
+                &lt;span itemprop="name"&gt;FII UAIC&lt;/span&gt;, &lt;span itemprop="jobTitle"&gt;Teacher&lt;/span&gt;&lt;/li&gt;
+            &lt;li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"&gt;
+                &lt;strong&gt;School:&lt;/strong&gt;  &lt;span itemprop="name"&gt;FII UAIC&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Technology Level:&lt;/strong&gt;&lt;span itemprop="technicalLevel"&gt;Advanced&lt;/span&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;div&gt;
+        &lt;div&gt;
+          &lt;h5&gt;Main Points&lt;/h5&gt;
+          &lt;p&gt;John is a teacher at computer scicence at UAIC and has advanced computer skills. 
+          For example:&lt;/p&gt;
+          &lt;ul&gt;
+            &lt;li itemprop="mainPoint"&gt;John has developed such applications and has programming knowledge&lt;/li&gt;
+            &lt;li itemprop="mainPoint"&gt;John dislikes applications that are not well structured;&lt;/li&gt;
+            &lt;li itemprop="mainPoint"&gt;Working environment: Desktop - Mac OS, Mobile: Iphone OS;&lt;/li&gt;           
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;h5&gt;Goals&lt;/h5&gt;
+          &lt;p&gt;Goals are the reasons users perform tasks, not the tasks.&lt;/p&gt;
+          &lt;ul&gt;
+            &lt;li&gt;Practical Goals: &lt;span itemprop="endGoal"&gt;share courses&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;Personal Goals: &lt;span itemprop="experienceGoal"&gt;organize work information and tasks&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;Business Goals: &lt;span itemprop="businessGoal"&gt;increase student enrollment&lt;/span&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+</pre>
+<p><strong>Acknowledgment:</strong> This work was partially supported by the European Social Fund in Romania, under the responsibility of the Managing Authority for the Sectorial Operational Program for Human Resources Development 2007-2013 [grant POSDRU/107/1.5/S/78342]. - more info at <a href="http://www.docpaideia.ro/">www.docpaideia.ro</a></p>
+</section>
+
+<footer>
+  <span><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a></span>
+  <br />
+  <span>This work is licensed under the <a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0</a> license. You are free to copy, distribute, transmit, remix, or adapt the work, as long as you reference the work and its authors.</span>
+</footer>
+
+<!-- Google Analytics --> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2902557-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Google Analytics -->
+</body>
+</html>

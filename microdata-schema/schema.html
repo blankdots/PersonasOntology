@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+<meta name="publisher" content="blankdots.com">
+<meta name="author" content="Stefan Negru">
+<meta name="keywords" content="Personas, Usability Testing, schema, microdata">
+<meta name="description" content="Personas and Usability Testing Schema ">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" type="text/css" href="schemastyle.css">
+<link href="prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="prettify.js"></script>
+<title>Personas and Usability Testing Schema </title>
+</head>
+
+<body>
+  <header class="mainHeader">
+    <h1>Proposed Personas and Usability Testing extensions to schema.org</h1>
+    <nav>
+      <h1 class="hidden">Main Navigation</h1>
+      <ul>
+        <li><a href="index.html">Documentation</a></li>
+        <li id="isSelected"><a href="schema.html">Schema</a></li>
+      </ul>
+    </nav>
+  </header>
+  <header class="page-title">
+  <h1><a href="http://schema.org/Thing">Thing</a> &gt; <a href="http://schema.org/Person">Person</a> &gt; <a href="#persona">Persona</a></h1><p>An archetype representing a fictional person or a group of persons.</p>
+  </header>
+  <section>
+    <table class="definition-table">
+    <thead>
+      <tr>
+        <th>Property</th>
+
+        <th>Expected Type</th>
+
+        <th>Description</th>
+      </tr>
+    </thead>
+
+      <tr class="supertype">
+        <th class="supertype-name" colspan="3">Properties from <a href="http://schema.org/Thing">Thing</a></th>
+      </tr>
+
+
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>description</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">A short description of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>image</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">URL of an image of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>name</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The name of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>URL</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">URL of the item.</td>
+      </tr>
+    </tbody>
+
+
+      <tr class="supertype">
+        <th class="supertype-name" colspan="3">Properties from <a href="http://schema.org/Person">Person</a></th>
+      </tr>
+
+
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>additionalName</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">An additional name for a Person, can be used for a middle name.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>address</code></th>
+        <td class="prop-ect"><a href="http://schema.org/PostalAddress">PostalAddress</a></td>
+        <td class="prop-desc">Physical address of the item.</td>
+      </tr>
+
+      <tr>
+        <th class="prop-nam" scope="row"><code>affiliation</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Organization">Organization</a></td>
+        <td class="prop-desc">An organization that this person is affiliated with. For example, a school/university, a club, or a team.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>alumniOf</code></th>
+        <td class="prop-ect"><a href="http://schema.org/EducationalOrganization">EducationalOrganization</a></td>
+        <td class="prop-desc">An educational organizations that the person is an alumni of.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>awards</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Awards won by this person or for this creative work.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>birthDate</code></th>
+        <td class="prop-ect">Date</td>
+        <td class="prop-desc">Date of birth.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>children</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">A child of the person.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>colleagues</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">A colleague of the person.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>contactPoints</code></th>
+        <td class="prop-ect"><a href="http://schema.org/ContactPoint">ContactPoint</a></td>
+        <td class="prop-desc">A contact point for a person or organization.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>deathDate</code></th>
+        <td class="prop-ect">Date</td>
+        <td class="prop-desc">Date of death.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>email</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Email address. </td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>familyName</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the Name property.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>faxNumber</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The fax number.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>follows</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">The most generic uni-directional social relation.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>gender</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Gender of the person.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>givenName</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the Name property.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>homeLocation</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Place">Place</a> or <a href="http://schema.org/ContactPoint">ContactPoint</a></td>
+        <td class="prop-desc">A contact location for a person's residence.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>honorificPrefix</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">An honorific prefix preceding a Person's name such as
+        Dr/Mrs/Mr.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>honorificSuffix</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">An honorific suffix preceding a Person's name such as M.D.
+        /PhD/MSCSW.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>interactionCount</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">A count of a specific user interactions with this item for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href="http://schema.org/UserInteraction">UserInteraction</a>.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>jobTitle</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The job title of the person (for example, Financial Manager).</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>knows</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">The most generic bi-directional social/work relation.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>memberOf</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Organization">Organization</a></td>
+        <td class="prop-desc">An organization to which the person belongs.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>nationality</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Country">Country</a></td>
+        <td class="prop-desc">Nationality of the person.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>parents</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">A parents of the person.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>performerIn</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
+        <td class="prop-desc">Event that this person is a performer or participant
+        in.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>relatedTo</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">The most generic familial relation.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>siblings</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">A sibling of the person. (the number of siblings would be nice as a property)</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>spouse</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">The person's spouse.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>telephone</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The telephone number.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>workLocation</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Place">Place</a> or <a href="http://schema.org/ContactPoint">ContactPoint</a></td>
+        <td class="prop-desc">A contact location for a person's place of work.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>worksFor</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Organization">Organization</a></td>
+        <td class="prop-desc">Organizations that the person works for.</td>
+      </tr>
+    </tbody>
+    
+
+      <tr class="supertype">
+        <th class="supertype-name" colspan="3">Properties from <a id="persona" href="#persona">Persona</a></th>
+      </tr>
+
+
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>personaType</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The type of Persona: Primary/Secondary/Negative/Supplemental/Served/Customer.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>tagline</code></th>
+        <td class="prop-ect">URL or Text</td>
+        <td class="prop-desc">A tagline specific to the persona category.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>mainPoint</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Main points specific to the persona category.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>minHeight</code></th>
+        <td class="prop-ect">Float</td>
+        <td class="prop-desc">The minimum height relevant to the persona. Recommended use: meters or feet.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>maxHeight</code></th>
+        <td class="prop-ect">Float</td>
+        <td class="prop-desc">The maximum height relevant to the persona. Recommended use: meters or feet.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>minWeight</code></th>
+        <td class="prop-ect">Float</td>
+        <td class="prop-desc">The minimum body weight relevant to the persona. Recommended use: kilograms or pounds (mass).</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>maxWeight</code></th>
+        <td class="prop-ect">Float</td>
+        <td class="prop-desc">The maximum body weight relevant to the persona. Recommended use: kilograms or pounds (mass).</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>minBustSize</code></th>
+        <td class="prop-ect">Float</td>
+        <td class="prop-desc">The minimum bust size relevant to the persona.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>maxBustSize</code></th>
+        <td class="prop-ect">Float</td>
+        <td class="prop-desc">The minimum bust size relevant to the persona.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>minWaistSize</code></th>
+        <td class="prop-ect">Float</td>
+        <td class="prop-desc">The minimum waist size relevant to the persona.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>maxWaistSize</code></th>
+        <td class="prop-ect">Float</td>
+        <td class="prop-desc">The maximum waist size relevant to the persona.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>minFeetSize</code></th>
+        <td class="prop-ect">Float</td>
+        <td class="prop-desc">The minimum feet size relevant to the persona.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>maxFeetSize</code></th>
+        <td class="prop-ect">Float</td>
+        <td class="prop-desc">The maximum feet size relevant to the persona.</td>
+      </tr>
+
+      <tr>
+        <th class="prop-nam" scope="row"><code>experienceGoal</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Experience goals are simple, universal, and personal. (could also be personalGoal)</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>endGoal</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">End goals represent the user's motivation for performing the tasks associated with using a specific product. (could also be named practicalGoal)</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>lifeGoal</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Life goals represent personal aspirations of the user that typically go beyond the context of the product being designed. (could also be named personalGoal)</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>businessGoal</code></th>
+        <td class="prop-ect">URL or Text</td>
+        <td class="prop-desc">Business goals represent the goals of the organization the persons works for.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>technicalGoal</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Technical goals reflect technical aspects regarding an application/product for example: run in a variety of browser, data privacy etc.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>experienceLevel</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Reflects the experience level of a persona with the application/product proposed Levels: Beginner/Intermediate/Advanced.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>technicalLevel</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Reflects the technical level of a persona.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>disability</code></th>
+        <td class="prop-ect"><a href="#disability">Disability</a> or Text</td>
+        <td class="prop-desc">A persona disability/disabilities relevant to accessibility aspects of the application/product.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>myersBriggs</code></th>
+        <td class="prop-ect"><a href="#personality">Personality</a> or Text</td>
+        <td class="prop-desc">inspired by FOAF Myer Briggs personality <a href="http://xmlns.com/foaf/spec/#term_myersBriggs">classification</a> 16 4-letter textual codes: ESTJ, INFP, ESFP, INTJ, ESFJ, INTP, ENFP, ISTJ, ESTP, INFJ, ENFJ, ISTP, ENTJ, ISFP, ENTP, ISFJ..</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>topicInterest</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Thing">Thing</a></td>
+        <td class="prop-desc">A thing of interest for a certain persona, inspired by FOAF <a href="http://xmlns.com/foaf/spec/#term_topic_interest">topic_interest</a></td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>affectiveState</code></th>
+        <td class="prop-ect"><a href="#emotion">Emotion</a> or Text</td>
+        <td class="prop-desc">The affective state of the user at a certain moment, if a proper schema is not used, please provide a certain emotion using text format.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>frustrationPoint</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Elements of a UI/UX or certain characteristics that frustrate the user or (s)he sees as pain points. These elements will help in usability evaluation.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>userRole</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The role of the user in the application/product (if necessary - for example admin, basic user etc.).</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>scenario</code></th>
+        <td class="prop-ect"><a href="#scenario">Scenario</a> or URL</td>
+        <td class="prop-desc">The scenario where the users represented by this persona will be used in the usability tests.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>context</code></th>
+        <td class="prop-ect"><a href="#context">Context</a></td>
+        <td class="prop-desc">Description of the context that best fits a scenario. Also the matter is that the context is also composed from a <a href="http://schema.org/Place">Place</a> and <a href="http://schema.org/Event">Event</a></td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>otherNotes</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Other notes and observations regarding the persona.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <header class="page-title">
+  <h1 id="scenario"><a href="http://schema.org/Thing">Thing</a> &gt; <a href="#scenario">Scenario</a></h1>
+  <p>A scenario represents a collage of events or series of actions and events, which takes place under certain conditions.</p>
+  </header>
+  <table class="definition-table">
+    <thead>
+      <tr>
+        <th>Property</th>
+
+        <th>Expected Type</th>
+
+        <th>Description</th>
+      </tr>
+    </thead>
+
+      <tr class="supertype">
+        <th class="supertype-name" colspan="3">Properties from <a href="http://schema.org/Thing">Thing</a></th>
+      </tr>
+
+
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>description</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">A short description of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>image</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">URL of an image of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>name</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The name of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>URL</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">URL of the item.</td>
+      </tr>
+    </tbody>
+
+      <tr class="supertype">
+        <th class="supertype-name" colspan="3">Properties from <a href="#scenario">Scenario</a></th>
+      </tr>
+
+
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>product</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Product">Product</a> or <a href="http://schema.org/SoftwareApplication">SoftwareApplication</a></td>
+        <td class="prop-desc">A product is used in this scenario, it could be a software application or even a physical product such as mobile phone or car. </td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>scenarioName</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">Name of the scenario.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>userTask</code></th>
+        <td class="prop-ect"><a href="#task">Task</a> or Text</td>
+        <td class="prop-desc">Tasks to be performed by the user.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>productTask</code></th>
+        <td class="prop-ect"><a href="#task">Task</a> or Text</td>
+        <td class="prop-desc">Task performed by the product in response to the user.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>interactionMedium</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The medium of interaction for example Touch, Gestural, Mouse+keyboard etc.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>description</code></th>
+        <td class="prop-ect"><a href="http://schema.org/ImageObject">ImageObject</a> or Text</td>
+        <td class="prop-desc">Short description of the scenario via text or image.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>context</code></th>
+        <td class="prop-ect"><a href="#context">Context</a></td>
+        <td class="prop-desc">Scenario context.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>participant</code></th>
+        <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+        <td class="prop-desc">Participants to this scenario.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>usabilityTest</code></th>
+        <td class="prop-ect"><a href="#UsabilityTest">UsabilityTest</a> or Text</td>
+        <td class="prop-desc">Details regarding the usability test.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>evaluatedElements</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">What are the focus/key elements in this scenario, which will be tested later on.</td>
+      </tr>
+      </tbody>
+  </table>
+
+  <header class="page-title">
+  <h1 id="context"><a href="http://schema.org/Thing">Thing</a> &gt; <a href="#context">Context</a></h1><p>The circumstances that form the setting for an event or a scenario.</p>
+  </header>
+  <table class="definition-table">
+    <thead>
+      <tr>
+        <th>Property</th>
+
+        <th>Expected Type</th>
+
+        <th>Description</th>
+      </tr>
+    </thead>
+
+      <tr class="supertype">
+        <th class="supertype-name" colspan="3">Properties from <a href="http://schema.org/Thing">Thing</a></th>
+      </tr>
+
+
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>description</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">A short description of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>image</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">URL of an image of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>name</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The name of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>URL</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">URL of the item.</td>
+      </tr>
+    </tbody>
+
+      <tr class="supertype">
+        <th class="supertype-name" colspan="3">Properties from <a href="#context">Context</a></th>
+      </tr class="supertype">
+
+
+    <tbody class="supertype">
+        <tr>
+          <th class="prop-nam" scope="row"><code>contextType</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">Context type - recommended values: Physical/Virtual or Tangible/Intangible.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>location</code></th>
+          <td class="prop-ect"><a href="http://schema.org/Place">Place</a> or <a href="http://schema.org/PostalAddress">PostalAddress</a></td>
+          <td class="prop-desc">Location of the context (for example building name or postal address).</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>event</code></th>
+          <td class="prop-ect"><a href="http://schema.org/Event">Event</a></td>
+          <td class="prop-desc">Upcoming or past events associated with this context.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>geo</code></th>
+          <td class="prop-ect"><a href="http://schema.org/GeoCoordinates">GeoCoordinates</a> or <a href="http://schema.org/GeoShape">GeoShape</a></td>
+          <td class="prop-desc">The geo coordinates of the context.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>sensorData</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">Data from the sensors regarding this context.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>photos</code></th>
+          <td class="prop-ect"><a href="http://schema.org/Photograph">Photograph</a> or <a href="http://schema.org/ImageObject">ImageObject</a></td>
+          <td class="prop-desc">Photographs of the context.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>reviews</code></th>
+          <td class="prop-ect"><a href="http://schema.org/Review">Review</a></td>
+          <td class="prop-desc">Review of the context.</td>
+        </tr>
+      </tbody>
+  </table>
+
+  <header class="page-title">
+  <h1 id="disability"><a href="http://schema.org/Thing">Thing</a> &gt; <a href="#disability">Disability</a></h1><p>
+Categories of physical or mental disabilities of a person.</p>
+  </header>
+  <table class="definition-table">
+    <thead>
+      <tr>
+        <th>Property</th>
+
+        <th>Expected Type</th>
+
+        <th>Description</th>
+      </tr>
+    </thead>
+
+      <tr class="supertype">
+        <th class="supertype-name" colspan="3">Properties from <a href="http://schema.org/Thing">Thing</a></th>
+      </tr>
+
+
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>description</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">A short description of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>image</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">URL of an image of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>name</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The name of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>URL</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">URL of the item.</td>
+      </tr>
+    </tbody>
+
+      <tr class="supertype">
+        <th class="supertype-name" colspan="3">Properties from <a href="#disability">Disability</a></th>
+      </tr>
+
+
+    <tbody class="supertype">
+        <tr>
+          <th class="prop-nam" scope="row"><code>visualImpairment</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">Visual impairment or blindness.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>hearingImpairment</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">Hearing impairment or hard of hearing or deafness.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>gustatoryImpairment</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">Impairment of the sense of smell and taste.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>somatosensoryImpairment</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">Insensitivity to stimuli such as touch, heat, cold, and pain.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>intellectualImpairment</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">Intellectual disability is a broad concept that ranges from mental retardation to cognitive deficits.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>mentalEmotionalDisorder</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">A mental disorder or mental illness is a psychological or behavioral pattern generally associated with subjective distress or disability that occurs in an individual.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>developmentalDisability</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">Developmental disability is any disability that results in problems with growth and development..</td>
+        </tr>
+      </tbody>
+  </table>
+   <header class="page-title">
+  <h1 id="UsabilityTest"><a href="http://schema.org/Thing">Thing</a> &gt; <a href="#UsabilityTest">ProductTesting</a> &gt; <a href="#UsabilityTest">UsabilityTest</a></h1><p>Usability testing measures the ease of use, of a specific component or set of components belonging to a Product or Application.</p>
+  </header>
+  <table class="definition-table">
+    <thead>
+      <tr>
+        <th>Property</th>
+
+        <th>Expected Type</th>
+
+        <th>Description</th>
+      </tr>
+    </thead>
+
+      <tr class="supertype">
+        <th class="supertype-name" colspan="3">Properties from <a href="http://schema.org/Thing">Thing</a></th>
+      </tr>
+
+
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>description</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">A short description of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>image</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">URL of an image of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>name</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The name of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>URL</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">URL of the item.</td>
+      </tr>
+    </tbody>
+
+      <tr class="supertype">
+        <th class="supertype-name" colspan="3">Properties from <a href="#UsabilityTest">UsabilityTest</a></th>
+      </tr>
+
+
+    <tbody class="supertype">
+        <tr>
+          <th class="prop-nam" scope="row"><code>productTested</code></th>
+          <td class="prop-ect"><a href="http://schema.org/Product">Product</a> or <a href="http://schema.org/SoftwareApplication">SoftwareApplication</a></td>
+          <td class="prop-desc">A product is used in this scenario, it could be a software application or even a physical product such as mobile phone or car. </td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>componentTested</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">The component of the product/application that is being tested.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>personaTested</code></th>
+          <td class="prop-ect"><a href="#Persona">Persona</a></td>
+          <td class="prop-desc">The type of Persona (Primary/Secondary/Negative/Supplemental/Served/Customer) being tested.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>inspectionMethod</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">Examine the usability aspects of a UI design by abiding to a set of guidelines. Further details: <a href="http://dl.acm.org/citation.cfm?id=503114">The state of the art in automating usability evaluation of user interfaces</a> for automation purposes.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>testingMethod</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">Testing method used. Further details: <a href="http://dl.acm.org/citation.cfm?id=503114">The state of the art in automating usability evaluation of user interfaces</a>.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>participant</code></th>
+          <td class="prop-ect"><a href="http://schema.org/Person">Person</a></td>
+          <td class="prop-desc">The user particpating to the test. Could be an actual user of an observer/moderator.</td>
+        </tr>
+        <tr><th class="prop-nam" scope="row"><code>testDuration</code></th>
+          <td class="prop-ect">Duration</td>
+          <td class="prop-desc">The length of time it takes to do the test, in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 duration format</a>.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>context</code></th>
+          <td class="prop-ect"><a href="#context">Context</a></td>
+          <td class="prop-desc">Description of the context that best fits a scenario. Also the matter is that the context is also composed from a <a href="http://schema.org/Place">Place</a> and <a href="http://schema.org/Event">Event</a>.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>scenario</code></th>
+          <td class="prop-ect"><a href="#scenario">Scenario</a></td>
+          <td class="prop-desc">The scenario where the users represented by this persona will be used in the usability tests.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>testObjective</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">An objective/goal of the usability test.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>userTask</code></th>
+          <td class="prop-ect"><a href="#task">Task</a> or Text</td>
+          <td class="prop-desc">Tasks to be performed by the user.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>testQuestion</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">A question presented to the user before/during/after the usability test.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>successCriteria</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">A successful design has been achieved when: 50% of users...; 80% of users... etc. Established before the test and compared with the test findings.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>testFinding</code></th>
+          <td class="prop-ect">Text or URL</td>
+          <td class="prop-desc">A finding extracted after performing the usability test. (E.g. A number of users (specify the number) did/found _______). Can be positive of negative.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>recommendation</code></th>
+          <td class="prop-ect">Text or URL</td>
+          <td class="prop-desc">Depending on the findings recommendations to those findings can be issued. (A more rigorous model can be created based on testFinding and recommendation)</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>expectedAnswer</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">An answer we expect to obtain to a certain question.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>givenAnswer</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">An answer we obtained to a certain question.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>testObservation</code></th>
+          <td class="prop-ect">Text or URL</td>
+          <td class="prop-desc">Written/video/audio notes attached to the usability test. These notes reflect the user thoughts and frustrations.</td>
+        </tr>
+      </tbody>
+  </table>
+  <header class="page-title">
+  <h1 id="task"><a href="http://schema.org/Thing">Thing</a> &gt; <a href="#task">Workflow</a> &gt; <a href="#task">Task</a></h1><p>An activity that needs to be accomplished within a defined period of time.</p>
+  </header>
+  <table class="definition-table">
+    <thead>
+      <tr>
+        <th>Property</th>
+
+        <th>Expected Type</th>
+
+        <th>Description</th>
+      </tr>
+    </thead>
+
+      <tr class="supertype">
+        <th class="supertype-name" colspan="3">Properties from <a href="http://schema.org/Thing">Thing</a></th>
+      </tr>
+
+
+    <tbody class="supertype">
+      <tr>
+        <th class="prop-nam" scope="row"><code>description</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">A short description of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>image</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">URL of an image of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>name</code></th>
+        <td class="prop-ect">Text</td>
+        <td class="prop-desc">The name of the item.</td>
+      </tr>
+      <tr>
+        <th class="prop-nam" scope="row"><code>URL</code></th>
+        <td class="prop-ect">URL</td>
+        <td class="prop-desc">URL of the item.</td>
+      </tr>
+    </tbody>
+
+      <tr class="supertype">
+        <th class="supertype-name" colspan="3">Properties from <a href="#task">Task</a></th>
+      </tr>
+
+
+      <tbody class="supertype">
+        <tr>
+          <th class="prop-nam" scope="row"><code>taskType</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">Could be an interactive task (performed by the user) or a non-interactive task (a feedback from the product/application).</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>taskPerformer</code></th>
+          <td class="prop-ect"><a href="http://schema.org/Product">Product</a> or <a href="http://schema.org/SoftwareApplication">SoftwareApplication</a> or <a href="http://schema.org/Person">Person</a></td>
+          <td class="prop-desc">A task could be performed by a Person, Product or Application.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>estimatedTime</code></th>
+          <td class="prop-ect">Duration</td>
+          <td class="prop-desc">The estimated length of time it takes to do the task, in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 duration format</a>. </td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>completionTime</code></th>
+          <td class="prop-ect">Duration</td>
+          <td class="prop-desc">The completion time of a task, in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 duration format</a>. A user might complete a task in a shorter or greater time than the <strong>estimatedTime</strong>. If the <strong>completionTime</strong> exceeds the estimated time then there is a problem. Also a user might skip the current task thus the <strong>completionTime</strong> would be <strong>0</strong>. </td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>action</code></th>
+          <td class="prop-ect">Text or URL</td>
+          <td class="prop-desc">A user or software/product performed action.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>inputValue</code></th>
+          <td class="prop-ect">Text</td>
+          <td class="prop-desc">A user or software/product inputed value.</td>
+        </tr>
+        <tr>
+          <th class="prop-nam" scope="row"><code>taskResult</code></th>
+          <td class="prop-ect">Text or URL</td>
+          <td class="prop-desc">A user can complete the task, skip it or have trouble with it. This property provides a description the user thoughts on the task, how (s)he manage to complete it or why (s)he skipped or had trouble with the task.  </td>
+        </tr>
+      </tbody>
+  </table>
+</section>
+<footer>
+  <span><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a></span>
+  <br />
+  <span>This work is licensed under the <a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0</a> license. You are free to copy, distribute, transmit, remix, or adapt the work, as long as you reference the work and its authors.</span>
+</footer>
+<!-- Google Analytics --> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2902557-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Google Analytics -->
+</body>
+</html>
