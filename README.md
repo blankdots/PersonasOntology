@@ -5,7 +5,8 @@ The PersonasOnto is depicts the personas domain along with relating concept and 
 This ontology wants to address some of the issues regarding this methodology like how personas are reconciled with other information and who is responsible for interpreting and validating them.
 
 Author: Stefan Negru, Sabin Buraga
-Website:
+
+Full description:
 * http://blankdots.com/open/personasonto.html
 * http://blankdots.com/open/schema/
 
