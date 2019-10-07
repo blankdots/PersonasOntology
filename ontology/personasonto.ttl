@@ -1226,7 +1226,7 @@ or product; proposed levels: Beginner, Intermediate, Advanced.""" ;
 
                                                          rdfs:subClassOf <http://blankdots.com/open/personasonto.owl#Person> ;
 
-                                                         dc:description "A person that participates in the usability test. Usualy a participant has a diresct correspondent to a Persona type." .
+                                                         dc:description "A person that participates in the usability test. Usualy a participant has a direct correspondent to a Persona type." .
 
 
 

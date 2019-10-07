@@ -1499,7 +1499,7 @@ This ontology wants to address some of the issues regarding this methodology lik
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>#Participant</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A person that participates in the usability test. Usualy a participant has a diresct correspondent to a Persona type.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A person that participates in the usability test. Usualy a participant has a direct correspondent to a Persona type.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
